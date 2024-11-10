@@ -3,8 +3,8 @@ import subprocess
 
 def create():
     product = "Example App"  # can be written in uppercase
-    if " " in product:
-        name = product.replace(" ", "_").lower()
+    # if " " in product:
+    #    name = product.replace(" ", "_").lower()
     name = product.lower()
     org_domain = "com.example"
     flutter_deps = [""]
@@ -16,9 +16,10 @@ def create():
     with open("org-domain.txt", "w") as f:
         f.write(org_domain)
     with open("flutter-deps.txt", "w") as f:
-        f.write(flutter_deps)
+        f.writelines(flutter_deps)
     with open("permissions.txt", "w") as f:
-        for permission in permissions:
-            f.writelines(permission)
+        f.writelines(permissions)
+
+
 if __name__ == "__main__":
     create()
