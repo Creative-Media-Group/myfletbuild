@@ -2,8 +2,12 @@ import subprocess
 
 
 def create():
-    name = input("Enter name: ")  # can be written in uppercase
-    
+    product = input("Enter name: ")  # can be written in uppercase
+    name = product.lower()
+    org_domain = "com.example"
+    flutter_deps = [""]
+    permissions = [""]
+
 
 
 def build():
