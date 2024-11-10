@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "myfletbuild"
-version = "0.2.0"
+version = "0.3.0"
 description = ""
 repository = "https://github.com/tct123/myfletbuild"
 authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
