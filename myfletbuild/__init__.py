@@ -2,12 +2,24 @@ import subprocess
 
 
 def create():
-    product = input("Enter name: ")  # can be written in uppercase
+    product = "Example App"  # can be written in uppercase
+    if " " in product:
+        name = product.replace(" ", "_").lower()
     name = product.lower()
     org_domain = "com.example"
     flutter_deps = [""]
     permissions = [""]
-
+    with open("product.txt", "w") as f:
+        f.write(product)
+    with open("name.txt", "w") as f:
+        f.write(name)
+    with open("org-domain.txt", "w") as f:
+        f.write(org_domain)
+    with open("flutter-deps.txt", "w") as f:
+        f.write(flutter_deps)
+    with open("permissions.txt", "w") as f:
+        for permission in permissions:
+            f.write(permission)
 
 
 def build():
