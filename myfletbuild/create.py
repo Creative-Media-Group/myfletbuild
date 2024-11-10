@@ -21,4 +21,4 @@ def create():
         for permission in permissions:
             f.writelines(permission)
 if __name__ == "__main__":
-    create
+    create()

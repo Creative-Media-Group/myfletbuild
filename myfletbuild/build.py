@@ -16,3 +16,5 @@ def build():
     print(flutter_deps)
     print(permissions)
     #subprocess.run(["flet"])
+if __name__ == "__main__":
+    build()
